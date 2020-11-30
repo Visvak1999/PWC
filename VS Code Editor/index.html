@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/mapdata/custom/world-robinson-highres.js"></script>
+</head>
+
+<style type="text/css">
+    #container {
+        height: 500px; 
+        min-width: 310px; 
+        max-width: 800px; 
+        margin: 0 auto; 
+    }
+    .loading {
+        margin-top: 10em;
+        text-align: center;
+        color: gray;
+    }
+</style>
+    
+<body>
+    <div id="container">
+
+    <script type="text/javascript">
+    var data = [
+    ['fo', 0],
+    ['us', 938154],
+    ['jp', 13231],
+    ['in', 26283],
+    ['kr', 14],
+    ['fr', 161644],
+    ['cn', 83909],
+    ['sw', 117],
+    ['sh', 80],
+    ['ec', 22719],
+    ['au', 6694],
+    ['ph', 7294],
+    ['es', 223759],
+    ['bu', 13],
+    ['mv', 143],
+    ['sp', 152],
+    ['ve', 323],
+    ['gb', 149569],
+    ['gr', 2506],
+    ['dk', 8643],
+    ['gl', 0],
+    ['pr', 24],
+    ['um', 44],
+    ['vi', 29],
+    ['ca', 45491],
+    ['tz', 72],
+    ['cl', 12858],
+    ['cv', 120],
+    ['dm', 34],
+    ['sc', 21],
+    ['nz', 1470],
+    ['ye', 31],
+    ['jm', 53],
+    ['om', 1905],
+    ['vc', 38],
+    ['bd', 4998],
+    ['sb', 40],
+    ['lc', 21],
+    ['no', 7499],
+    ['cu', 1337],
+    ['kn', 15],
+    ['bh', 41],
+    ['fi', 1862],
+    ['id', 8607],
+    ['mu', 44],
+    ['se', 18177],
+    ['ru', 74588],
+    ['tt', 115],
+    ['br', 59324],
+    ['bs', 39],
+    ['pw', 50],
+    ['ir', 89328],
+    ['gw', 62],
+    ['gd', 72],
+    ['ee', 54],
+    ['ag', 48],
+    ['fj', 59],
+    ['bb', 866],
+    ['it', 195351],
+    ['mt', 81],
+    ['pg', 60],
+    ['de', 156513],
+    ['vu', 55],
+    ['gq', 9],
+    ['cy', 15],
+    ['km', 19],
+    ['va', 66],
+    ['sm', 59],
+    ['am', 79],
+    ['az', 1617],
+    ['tj', 70],
+    ['uz', 1862],
+    ['ls', 45],
+    ['kg', 29],
+    ['kp', 0],
+    ['pt', 23392],
+    ['mx', 13842],
+    ['ma', 3897],
+    ['co', 5142],
+    ['ar', 3780],
+    ['sa', 16299],
+    ['qa', 4500],
+    ['nl', 82],
+    ['ae', 9813],
+    ['ke', 343],
+    ['my', 5742],
+    ['pa', 5538],
+    ['ht', 87],
+    ['do', 5926],
+    ['hr', 89],
+    ['th', 2907],
+    ['cd', 5926],
+    ['kw', 2892],
+    ['ie', 93],
+    ['mm', 146],
+    ['ug', 95],
+    ['kz', 665],
+    ['tr', 107773],
+    ['ga', 88],
+    ['tl', 99],
+    ['mr', 104],
+    ['dz', 3256],
+    ['pe', 25331],
+    ['ao', 103],
+    ['mz', 114],
+    ['cr', 105],
+    ['sv', 116],
+    ['gt', 473],
+    ['bz', 18],
+    ['gy', 73],
+    ['hn', 627],
+    ['ni', 12],
+    ['mw', 112],
+    ['tm', 113],
+    ['zm', 84],
+    ['nc', 115],
+    ['za', 4361],
+    ['lt', 117],
+    ['et', 118],
+    ['so', 390],
+    ['gh', 120],
+    ['si', 23],
+    ['ba', 122],
+    ['jo', 44],
+    ['sy', 78],
+    ['mc', 82],
+    ['al', 100],
+    ['uy', 596],
+    ['cnm', 128],
+    ['mn', 121],
+    ['rw', 64],
+    ['bo', 866],
+    ['cm', 1518],
+    ['cg', 121],
+    ['eh', 66],
+    ['rs', 74],
+    ['me', 89],
+    ['bj', 120],
+    ['tg', 95],
+    ['la', 139],
+    ['af', 1463],
+    ['ua', 8125],
+    ['sk', 23],
+    ['jk', 143],
+    ['pk', 12723],
+    ['bg', 1247],
+    ['li', 120],
+    ['at', 15148],
+    ['sz', 64],
+    ['hu', 78],
+    ['ne', 684],
+    ['lu', 151],
+    ['ad', 738],
+    ['ci', 151],
+    ['lr', 64],
+    ['sl', 86],
+    ['bn', 78],
+    ['be', 32],
+    ['iq', 1763],
+    ['ge', 34],
+    ['gm', 160],
+    ['ch', 165],
+    ['td', 35],
+    ['ng', 1182],
+    ['kv', 46],
+    ['lb', 48],
+    ['sx', 166],
+    ['dj', 56],
+    ['er', 123],
+    ['bi', 169],
+    ['sr', 10],
+    ['il', 171],
+    ['sn', 614],
+    ['gn', 996],
+    ['pl', 11273],
+    ['mk', 175],
+    ['py', 228],
+    ['by', 3750],
+    ['lv', 804],
+    ['bf', 179],
+    ['ss', 180],
+    ['na', 16],
+    ['ro', 10635],
+    ['zw', 31],
+    ['kh', 184],
+    ['sd', 750],
+    ['cz', 7352],
+    ['ly', 177],
+    ['md', 188],
+    ['cf', 16],
+    ['sg', 190],
+    ['vn', 179],
+    ['tn', 117],
+    ['tw', 429],
+    ['mg', 194],
+    ['is', 1790],
+    ['lk', 460],
+    ['eg', 4319],
+    ['ml', 198],
+    ['bw', 22],
+    ['np', 49],
+    ['bt', 201]
+];
+
+// Create the chart
+Highcharts.mapChart('container', {
+    chart: {
+        map: 'custom/world-robinson-highres'
+    },
+
+    title: {
+        text: 'COVID-19 World Map'
+    },
+
+    subtitle: {
+        text: 'Source map: <a href="http://code.highcharts.com/mapdata/custom/world-robinson-highres.js">World, Robinson projection, high resolution</a>'
+    },
+
+    mapNavigation: {
+        enabled: true,
+        buttonOptions: {
+            verticalAlign: 'bottom'
+        }
+    },
+
+    colorAxis: {
+        min: 0
+    },
+
+    series: [{
+        data: data,
+        name: 'Number of cases recorded',
+        states: {
+            hover: {
+                color: '#BADA55'
+            }
+        },
+        dataLabels: {
+            enabled: true,
+            format: '{point.name}'
+        }
+    }]
+});
+
+</script>
+</div>
+</body>
+</html>
